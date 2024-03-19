@@ -1,7 +1,5 @@
 # My first game
 import random
-#x = random.randint(0, 100)
-#print(x)
 res = True
 while res:
     x = random.randint(0, 100)
@@ -10,13 +8,11 @@ while res:
         print('Добрый день игрок! Угадайте число')
         answer = int(input('Введите ваш ответ: '))
         if answer > x:
-            print('Слишком много, поробуйте еще.')
-            print('')
+            print('Слишком много, поробуйте еще.\n')
         elif answer < x:
-            print('Слишком мало, поробуйте еще.')
-            print('')
+            print('Слишком мало, поробуйте еще.\n')
         elif answer == x:
-            print(f'Вы победитель! Ответ = {x}')
+            print(f'Правильно! Ответ = {x}\n')
             res = False
     game = input('Хотите сыграть еще, да/нет:')
     if game == 'да':
