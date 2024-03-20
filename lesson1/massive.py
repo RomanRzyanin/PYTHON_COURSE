@@ -5,10 +5,10 @@ motorcycles.append('ducati')
 # while i < 4:
 #     print(f'\t{motorcycles[i]}')
 #     i += 1
-n = len(motorcycles)
-for i in range(n):
+#n = len(motorcycles)
+for i in motorcycles: #range(n):
     
-    print(f'\t{motorcycles[i]}')
+    print(f'\t{i}')
 
 #motorcycles_1 = motorcycles.pop(2)
 # motorcycles_2 = motorcycles.remove('yamaha')

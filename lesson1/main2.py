@@ -2,10 +2,10 @@
 import random
 res = True
 while res:
-    x = random.randint(0, 100)
-    print(x)
+    x = random.randint(1, 100)
+    #print(x)
     while res:
-        print('Добрый день игрок! Угадайте число')
+        print('Добрый день игрок! Угадайте число от 1 до 100')
         answer = int(input('Введите ваш ответ: '))
         if answer > x:
             print('Слишком много, поробуйте еще.\n')
