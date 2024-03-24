@@ -1,41 +1,50 @@
 #task9
+import time
 
-# def factorial(x):
-#     fact = 1
-#     while x > 1:
-#         fact = fact * x
-#         x -= 1
-#     return fact
+def factorial(x):
+    fact = 1
+    for i in range(x, 1, -1):
+        fact = fact * i
         
-# n = int(input('Введите любое целое неотрицательное число: '))
-# print(f'Факториал числа {n} = {factorial(n)}')
+    # while x > 1:
+    #     fact = fact * x
+    #     x -= 1
+    return fact
+        
+n = int(input('Введите любое целое неотрицательное число: '))
 
+prog_start = time.time()
+print(f'Факториал числа {n} = {factorial(n)}')
+prog_stop = time.time()
+
+print((prog_stop - prog_start) * 1000)
 #task11
  
-a = int(input('Введите любое целое неотрицательное число > 1: '))
+# a = int(input('Введите любое целое неотрицательное число > 1: '))
 
-if a == 0:  print(1)
+# if a == 0:  print(1)
 
-else:
+# else:
 
-    fib_prev, fib_next = 0, 1
-    n = 1
+#     fib_prev, fib_next = 0, 1
+#     n = 1
 
-    while fib_next <= a:
+#     while fib_next <= a:
 
-        if fib_next == a:
-            print(n + 1)
-            break
+#         if fib_next == a:
+#             print(n + 1)
+#             break
 
-        # fib_prev, fib_next = fib_next, fib_prev + fib_next
-        temp = fib_next
-        fib_next = fib_prev + fib_next
-        fib_prev = temp
+#         # fib_prev, fib_next = fib_next, fib_prev + fib_next
+#         temp = fib_next
+#         fib_next = fib_prev + fib_next
+#         fib_prev = temp
         
-        n += 1
-    else:  print(-1)
+#         n += 1
+#     else:  print(-1)
     
 #task13
+
 # import random
 # n = int(input('Введите количество рассматриваемых дней N: \n'))
 # temp = []
