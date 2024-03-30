@@ -28,6 +28,22 @@
 
 
 
+list_1 = [5, 2, 3, 4, 5]
+print(list_1)
+# list_2 = [1]
+list_1 = list_1.append(5)
+
+x = len(list_1)
+list_1[x:] = 5
+list_1[:0] = 2
+print(list_1)
+# max_b = 0
+
+# for i in range(1, len(list_1) - 1):
+#     max1 = list_1[i - 1] + list_1[i] + list_1[i + 1]
+#     if max1 > max_b:
+#         max_b = max1
+# print(max_b)
 
 
 
