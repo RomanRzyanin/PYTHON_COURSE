@@ -6,14 +6,14 @@
 # print(info)
 
 
-file = 'phonebook.txt'
-table=[['Last_name', 'First_name', 'Phone_number']]
-with open(file, 'r', encoding='utf-8') as f:
-    print('Last_Name first_name phone')
-    for line in f:
-        table.append(line.split())
-    for row in table:
-        print('| {:<12} | {:<12} | {:<15} |'.format(*row))
+# file = 'phonebook.txt'
+# table=[['Last_name', 'First_name', 'Phone_number']]
+# with open(file, 'r', encoding='utf-8') as f:
+#     print('Last_Name first_name phone')
+#     for line in f:
+#         table.append(line.split())
+#     for row in table:
+#         print('| {:<12} | {:<12} | {:<15} |'.format(*row))
       
 
 
@@ -43,3 +43,18 @@ with open(file, 'r', encoding='utf-8') as f:
 # with open('file.txt', 'w') as data:
 #     data.write('test_1\n')
 #     data.write('test_2\n')
+
+
+import datetime
+
+def print_time():
+    now = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
+    # now = datetime.now()
+    # current_time = now.strftime("%H:%M")
+    print("Current Time:", now)
+
+print_time()
+
+print(Ellipsis)
+print(...)
+print(...)

@@ -12,10 +12,13 @@ def menu(phonebook):
             show_phonebook(phonebook)
         elif choice == '3':
             print('Извините, раздел находится в разработке\n')
+            change_contact(phonebook)
         elif choice == '4':
             print('Извините, раздел находится в разработке\n')
+            delete_contact(phonebook)
         elif choice == '5':
             print('Извините, раздел находится в разработке\n')
+            find_contact(phonebook)
         elif choice == '6':
             import_data(phonebook)
         elif choice == '7':
@@ -24,6 +27,15 @@ def menu(phonebook):
         else:
             print('Такой команды не существует!\n')
             continue
+
+def change_contact(phonebook):
+    ...
+
+def delete_contact(phonebook):
+    ...
+
+def find_contact(phonebook):
+    ...
         
 def add_contact(phonebook):
     '''Функция создания нового контакта в телефонную книгу'''
