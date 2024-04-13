@@ -38,7 +38,7 @@ def find_contact(phonebook):
     ...
         
 def add_contact(phonebook):
-    '''Функция создания нового контакта в телефонную книгу'''
+    '''Функция создания нового контакта'''
     last_name = input('Введите фамилию: ')
     first_name = input('Введите имя: ')
     phone_number = input('Введите номер телефона: ')
@@ -49,7 +49,7 @@ def add_contact(phonebook):
     print('Номер записан!\n')
 
 def show_phonebook(phonebook):
-    '''Функция выводящая все контакты находящиеся в телефонной книге'''
+    '''Функция выводящая все контакты'''
     table=[['Last_name', 'First_name', 'Phone_number']]
     with open(phonebook, 'r', encoding='utf-8') as f:
         for line in f:
