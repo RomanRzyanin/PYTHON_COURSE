@@ -16,11 +16,13 @@
 всех арифметических операций допускаются только +1 и -1.
 Также нельзя использовать циклы.'''
 
-def sum_number(a, b):
-    if b == 0:
-        return a
-    return sum_number(a, b-1) + 1
+# def sum_number(a, b):
+#     if b == 0:
+#         return a
+#     return sum_number(a, b-1) + 1
 
-a = int(input('Введите число a = '))
-b = int(input('Введите число b = '))
-print(f'Sum {a} & {b} = {sum_number(a, b)}')
+# a = int(input('Введите число a = '))
+# b = int(input('Введите число b = '))
+# print(f'Sum {a} & {b} = {sum_number(a, b)}')
+
+print(type(eval('5*5')))
