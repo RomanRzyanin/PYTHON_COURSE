@@ -45,16 +45,97 @@
 #     data.write('test_2\n')
 
 
-import datetime
+# import datetime
 
-def print_time():
-    now = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
-    # now = datetime.now()
-    # current_time = now.strftime("%H:%M")
-    print("Current Time:", now)
+# def print_time():
+#     now = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
+#     # now = datetime.now()
+#     # current_time = now.strftime("%H:%M")
+#     print("Current Time:", now)
 
-print_time()
+# print_time()
 
-print(Ellipsis)
-print(...)
-print(...)
+# print(Ellipsis)
+# print(...)
+# print(...)
+
+# title = "The walrus operator"
+# #words_count = len(title.split())
+# print(title)
+# words_count = len(title.split())
+# print(words_count)
+# if words_count > 10:
+#     print("Too many words in paragraph title:", words_count)
+# else:
+#     print("Paragraph title is suitable. Words count:", words_count)
+    
+# def get_words_count(s):
+#     # Your code here
+#     if s == "":
+#         return 0
+       
+#     count = 0
+    
+#     for c in s:
+#         if c == "_":
+#             count += 1
+
+#     return count + 1
+
+# def get_words_count_1(s):
+#     res = len(s.split('_')) if s != '' else 0
+#     return res
+# s = 'fsb_terb_reba_rebv'
+# print(get_words_count(s))
+# print(get_words_count_1(s))
+
+
+
+# for letter in s:
+#     if letter == "y":
+#         break
+
+#     print(letter, end = '')
+# else:
+#     print("There is no letter 'y' in string")
+
+
+
+# s = "IF the implementation is hard to explain, it's a bad idea."    
+# def print_letters(s):
+#     for c in s:
+#         if c.isupper():
+#             print(c)
+#         elif c == ' ':
+#             break
+#     else:
+#         print('no spaces')
+# print_letters(s)
+
+# print('Java')
+# print('Ruby')
+# print('Scala')
+# print('Python', end='+')  # print('C++')
+# # print('GO')
+# print('C#', end='=')  # print('C')
+# print('awesome')
+# # finish
+
+# print('a', 'b', 'c', sep='*')
+# print('d', 'e', 'f', sep='**', end='')
+# print('g', 'h', 'i', sep='+', end='%')
+# print('j', 'k', 'l', sep='-', end='\n')
+# print('m', 'n', 'o', sep='/', end='!')
+# print('p', 'q', 'r', sep='1', end='%')
+# print('s', 't', 'u', sep='&', end='\n')
+# print('v', 'w', 'x', sep='%')
+# print('y', 'z', sep='/', end='!')
+
+# n = int(input())
+# print(-(-n // 4))
+
+p_1, p_2 = inpit(), input()
+if p_1 == p_2:
+    print('Пароль принят')
+else:
+    print('Пароль не принят')

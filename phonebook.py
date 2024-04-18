@@ -56,6 +56,7 @@ def show_phonebook(phonebook):
             table.append(line.split())
         for row in table:
             print('| {:<12} | {:<12} | {:<15} |'.format(*row))
+    return table
  
 def import_data(phonebook):
     '''Функция копирования телефонной книги в другой файл'''
